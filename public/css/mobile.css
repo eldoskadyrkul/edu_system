@@ -1,0 +1,95 @@
+@media only screen and (min-width: 1500px) {
+	div.col-4-xxl {
+		-webkit-box-flex: 0;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+	div.col-8-xxl {
+		-webkit-box-flex: 0;
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%;
+	}
+	div.col-12-xxl {
+		-webkit-box-flex: 0;
+		flex: 0 0 100%;
+		min-width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.header_menu .navbar-nav {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items:center;
+	}
+	div.sidebar_student .sidebar_menu {
+		position: static;
+		overflow: visible;
+		width: auto;
+	}
+	div.sidebar-expand-md {
+		position: static;
+		overflow: visible;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar_header {
+		display: block;
+		text-align: center;
+		min-width: 20rem;
+	}
+	.header_menu .navbar-nav .navbar_item:last-child {
+		margin-bottom: 10px;
+		border-bottom: none;
+	}
+	.header_menu .navbar-nav .navbar_item {
+		margin-right: 0;
+		border-bottom: 1px solid #e8e3e3;
+	}
+	.header_menu .navbar-nav .navbar_item:last-child {
+		margin-top: 15px;
+	}
+	.header_menu .navbar-nav .header_admin .navbar_nav_link {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+	.header_menu .navbar-nav .navbar_item .navbar_nav_link {
+		padding: 15px 0;
+		display: flex!important;
+		align-items: center;
+	}
+	.header_menu .navbar-nav .header_admin .navbar_nav_link .admin_title {
+		padding: 0 0 0 15px;
+		text-align: left;
+	}
+	.header_menu .navbar-nav .header_admin .dropdown-menu {
+		animation: none;
+		margin-bottom: 15px;
+		min-width: 200px;
+	}
+	.header_menu .navbar-nav .header_language .navbar_nav_link::after {
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+		height: auto;
+		width: auto;
+	}
+	.header_menu .navbar-nav .header_admin .navbar_nav_link::after {
+		top: 25px;
+		right: 10px;
+	}
+	.navbar_header div.header_logo {
+		padding-left: 0;
+		padding-right: 12px;
+	}
+	.navbar_header .toogle-button {
+		display: none;
+	}
+	.student_dashboard .sidebar_student {
+		display: none;
+	}
+	div.sidebar-expand-md {
+		display: none;
+	}
+}
